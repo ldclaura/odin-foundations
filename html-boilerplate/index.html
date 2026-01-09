@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- for correct screen reading pronunciation and other accessibility-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 1</title>
+</head>
+<body>
+    <!--paragraph-->
+    <p>paragraph</p>
+    <p>another paragraph</p>
+
+    <!-- headers -->
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <!-- cursive and bold-->
+    <strong>bold</strong>
+    <p>this is <strong>bold</strong></p>
+    <em>emphasized</em>
+    <p>this is <em>emphasized</em></p>
+
+    <!-- normal list-->
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+
+    <ol> <!--ordered list-->
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+
+    <!--links-->
+    <p><a>link that wont work</a></p>
+    <p><a href="https://www.theodinproject.com/about">link that will work</a></p>
+
+    <p><a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">link that will work 2</a></p>
+    <!--target="_blank" rel="noopener noreferrer">-->
+        <!--target specifies where linked  resource will be opened-->
+        <!-- if it is not specified it defaults to _self, which opens in current tab -->
+        <!-- set to _blank for new tab or window-->
+    <!-- rel describes relation between current page and linked doc-->
+        <!-- noopener ensures link opened in new tab or window cannot interact or access original page-->
+            <!--(security)-->
+        <!-- noreferrer preventsthe new page from knowing where the user came from-->
+            <!-- (privacy and security)-->
+    <!-- noopener prevents phishing attacks, tabnabbing-->
+    <!-- noreferrer stops opened link from knowing your webpage links to it-->
+    <!--noreferrer automatically includes noopener basically (i think)-->
+
+    <!--absolute and relative links-->
+        <!--absolute-->
+            <!-- typically scheme://domain/path-->
+            <!--will always contain scheme and domain of dest-->
+            <p><a href="https://www.theodinproject.com/about">links to other website</a></p>
+        <!--relative-->
+            <p><a href="about.html">links to same website</a></p>
+            <p>Think of your domain name (town.com) as a town, the directory in which your website is located (/museum) as a museum, and each page on your website as a room in the museum (/museum/movie_room.html and /museum/shops/coffee_shop.html). Relative links like ./shops/coffee_shop.html are directions from the current room (the museum movie room /museum/movie_room.html) to another room (the museum shop). Absolute links, on the other hand, are full directions including the protocol (https), domain name (town.com) and the path from that domain name (/museum/shops/coffee_shop.html): https://town.com/museum/shops/coffee_shop.html.</p>
+    <!--images-->
+        <!--absolute-->
+        <img src="https://www.theodinproject.com/mstile-310x310.png" alt="odin project logo">
+        <!--relative-->
+        <img src="./images/dog.jpeg" alt="dog">
+
+    <!--image sizes-->
+        <img src="./images/dog.jpeg" alt="dog" height="310" width="310">
+
+    <p><strong><a href="https://internetingishard.netlify.app/html-and-css/links-and-images/">check this out</a></strong></p>
+
+        <!--https://internetingishard.netlify.app/html-and-css/links-and-images/-->
+</body>
+</html>

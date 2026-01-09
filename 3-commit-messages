@@ -1,0 +1,16 @@
+Bad commit messages:
+Too vague (fix a bug)
+
+Good commit messages:
+explains why behind your change
+describes what problem your changes solve and how
+
+How to make a good commit message:
+Subject (This is the change)
+Body (Problem solved and how)
+-------------------------------------------------------------------------------------------------------
+"Add missing link and alt text to the company's logo (subject)
+
+Screen readers won't read the images to users with disabilities without this information. (body)"
+-------------------------------------------------------------------------------------------------------
+It is good to separate the body and subject with a new line, good practice and makes it easier to read.

@@ -1,0 +1,43 @@
+open CMD shortcut:
+ctrl+alt+t
+
+CMD paste shortcut:
+ctrl+shift+v
+
+CMD copy shortcut:
+ctrl+shift+c
+
+CMD tab completion:
+$ cd d
+(press tab will show options, will autocomplete if there's only one option)
+Documents/ Downloads/
+
+commands:
+whoami - prints username
+
+code - open VSCode
+
+code project_file/ - opens project in VSCode
+
+cd - move current location
+(cd Desktop e.g.)
+
+ls - list files in current directory
+(Desktop Documents Downloads)
+
+mkdir - create directory
+(e.g. mkdir Dir_1)
+
+touch - create file
+(e.g. touch File_1)
+
+rm -r - delete directory
+(e.g. rm -r Dir_1)
+
+rm - delete file
+(rm File_1)
+
+cd .. - go back directory
+
+
+

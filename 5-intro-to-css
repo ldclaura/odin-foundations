@@ -1,0 +1,65 @@
+CSS
+
+Rules made up of Selectors
+Semicolon-Separated list of Declarations
+Declarations made up of a Property-Value Pair
+
+div.bold-text {
+	font-weight: 700;
+}
+
+div.bold-text (<-Selector) {
+	font-weight: (<-Property) 700; (<-Value)
+}
+
+Universal selector = *
+
+* {
+     color: purple;
+}
+
+Type Selector
+
+div {
+  color: white;
+}
+
+Class Selector
+
+<div class="alert-text">Please agree to our terms of service.</div>
+
+.alert-text {
+  color: red;
+}
+
+Id Selector
+
+<div id="title">My Awesome 90's Page</div>
+
+#title {
+  background-color: red;
+}
+
+Grouping Selector
+two groups of elements sharing style declarations, declare them together instead of redundant text
+
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+Chaining Selectors
+chaining both .subsection and .header
+
+.subsection.header {
+  color: red;
+}
+
+Works with ID as well
+
+.subsection#preview {
+  color: blue;
+}
+
+
