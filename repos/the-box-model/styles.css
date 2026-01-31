@@ -1,0 +1,52 @@
+* { /*make everything to the side basically?
+    */
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    box-sizing: content-box; /*default*/
+}
+
+.box-one {
+    background-color: red;
+    border: 0 solid purple;
+}
+
+.box-two {
+    background-color: blue;
+    border: 10px solid green;
+}
+
+.box-three {
+    background-color: blue;
+    border: 0 solid green;
+    padding: 20px; /*the background size in elements (space inside)*/
+}
+
+.box-four {
+    background-color: blue;
+    border: 0 solid green;
+    margin: 20px; /*the space between elements (outside)*/
+} /*note: if you have 2 boxes with 60 margin, the gap will be 60 and not 120
+margins collapse into eachother, do not stack*/
+
+.box-five { /*box model size = 120x120
+    because it adds padding and border*/
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border: 10px;
+}
+
+.box-six { /*box model size = 100x100
+    because of the box-sizing: border-box
+    it accounts for the border, padding
+    makes height and width smaller
+    to account for border, padding size*/
+    background-color: blue;
+    border: 20 solid green;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+}
