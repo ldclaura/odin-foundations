@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+<!--Generally, you’re most likely to use declarations like flex: 1;
+ to make divs grow evenly
+ and flex-shrink: 0 
+ to keep certain divs from shrinking.-->
+
+ <!-- go to the try it
+ https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex
+  -->
+<!-- 
+  test flex direction
+  row and column
+  try it
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-direction -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +20,60 @@
     <link rel="stylesheet" href="intro.css">
 </head>
 <body>
-    hello
+<div class="flex-container">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+</div>
+
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+
+<div class="container2">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+
+
 </body>
 </html>
+
+<!-- the flex shorthand
+
+div {
+    flex: 1;
+} - is actually shorthand for 
+ flex-grow: 1, 
+ flex-shrink: 1, 
+ and flex-basis: 0 -->
+<!-- 
+ <FLEX-GROW>
+    When we applied flex: 1 to every div inside our container, 
+    we were telling every div to grow the same amount. -->
+
+<!-- 
+<FLEX-SHRINK>
+    flex-shrink is similar to flex-grow, 
+    but sets the “shrink factor” of a flex item. 
+    flex-shrink only ends up being 
+    applied if the size of all flex items
+     is larger than their parent container.  -->
+
+<!--
+<FLEX-BASIS>
+    flex-basis sets the initial size of a flex item,
+     so any sort of flex-growing or flex-shrinking starts 
+     from that baseline size.
+     The shorthand value defaults to flex-basis: 0%
+
+     The actual default value for flex-basis is auto, 
+     but when you specify flex: 1 on an element,
+      it interprets that as 
+      flex: 1 1 0
+
+-->
