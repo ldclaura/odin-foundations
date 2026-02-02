@@ -1,0 +1,83 @@
+<!-- CSS has two box types: block and inline boxes, 
+ which determine element behavior and interaction. 
+ The display property controls how HTML elements appear on the webpage.-->
+
+ <!-- NORMAL FLOW
+ normal flow is default
+It ensures that your content is readable even if the user's using a very limited browser or a device such as a screen reader that reads out the content of the page. -->
+<!-- inline elements:
+<a> <abbr> <acronym> <b> <bdo> <big> <br> <button> <cite> <code> <dfn>
+<em> <i> <img> <input> <kbd> <label> <map> <object> 
+<output> <q> <samp> <script> <select> <small> <span>
+<strong> <sub> <sup> <textarea> <time> <tt> <var> -->
+
+<style>
+body {
+  width: 500px;
+  margin: 0 auto;
+}
+
+p {
+  background: rgb(255 84 104 / 30%);
+  border: 2px solid rgb(255 84 104);
+  padding: 10px;
+  margin: 10px;
+}
+
+span {
+  background: white;
+  border: 1px solid black;
+}
+
+
+</style>
+<h1>Basic document flow</h1>
+
+<p>
+  I am a basic block level element. My adjacent block level elements sit on new
+  lines below me.
+</p>
+
+<p>
+  By default we span 100% of the width of our parent element, and we are as tall
+  as our child content. Our total width and height is our content + padding +
+  border width/height.
+</p>
+
+<p>
+  We are separated by our margins. Because of margin collapsing, we are
+  separated by the size of one of our margins, not both.
+</p>
+
+<p>
+  Inline elements <span>like this one</span> and <span>this one</span> sit on
+  the same line along with adjacent text nodes, if there is space on the same
+  line. Overflowing inline elements will
+  <span>wrap onto a new line if possible (like this one containing text)</span>,
+  or just go on to a new line if not, much like this image will do:
+  <img
+    src="https://mdn.github.io/shared-assets/images/examples/long.jpg"
+    alt="snippet of cloth" />
+</p>
+
+<!-- inline-block
+display: inline-block brought a new way to create side by side boxes that collapse and wrap properly depending on the available space in the containing element. It makes layouts that were previously accomplished with floats easier to create. No need to clear floats anymore.
+
+Compared to display: inline, the major difference is that inline-block allows to set a width and height on the element. Also, with display: inline, top and bottom margins & paddings are not respected, and with display: inline-block they are.
+
+Now, the difference between display: inline-block and display: block is that, with display: block, a line break happens after the element, so a block element doesn’t sit next to other elements. 
+
+span.box {
+  display: inline; /* the default for span */
+  width: 100px;
+  height: 160px;
+  padding: 18px;
+}
+
+span.box2 {
+  display: inline-block;
+  width: 100px;
+  height: 160px;
+  padding: 18px;
+}
+ -->
