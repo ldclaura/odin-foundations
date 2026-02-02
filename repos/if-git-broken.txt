@@ -1,0 +1,5 @@
+type this in foundations
+
+> find .git/objects/ -type f -empty -delete
+> git fetch -p
+> git fsck --full
