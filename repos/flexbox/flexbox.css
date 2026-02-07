@@ -1,0 +1,135 @@
+.flex {
+    display: flex;
+}
+
+/* display: flex positions on main axis
+------->
+MAIN AXIS
+there is an x and y axis, main is x */
+
+.flexdirection {
+    display: flex;
+    flex-direction: column;
+    /* row by default */
+}
+
+/* display: flex positions on main axis
+MAIN AXIS is VERTICAL (y)
+there is an x and y axis, main is x */
+
+.flex-justify-content {
+    /* aligns items on main axis (row by default) */
+    /* this becomes column if flex-direction: column */
+    display: flex;
+    justify-content: center;
+    /* flex-start by default */
+    /* flex-end moves from top left to top right (assuming everything else is default) */
+    /* center moves to middle of axis */
+    /* space-between evenly distributes items (one in middle, one on left corner, one on right corner (if theres 3) */
+    /* space-around is like between but theyre a little closer together and don't touch the sides of the page, adds space around */
+    /* space-evenly evenly distributes space around items. gaps are the same size between all items */
+}
+
+.flex-align-items {
+    /* aligns items on opposite axis */
+    display: flex;
+    align-items: flex-start;
+    /* flex-start is default */
+    /* flex-end is end of axis */
+    /* center is middle */
+    /* baseline is so that the baseline text of each item is aligned, 
+    for example if the text of another item is bigger or smaller the text of each item will still be aligned. 
+    (boxes will be uneven if text different size so that text is aligned) */
+}
+
+.flex-wrap {
+    /* items will be too close together, fix with flex wrap */
+    display: flex;
+    flex-wrap: wrap;
+    /* no-wrap is default */
+    /* wrap makes it so items are not squeezing into one line, and just create a new line instead. */
+}
+
+.flex-align-content {
+    /* only works with flex-wrap enabled  */
+    /* aligns everything on opposite axis  */
+    /* i think its like align-items but with the items on one line, and items on another line, grouped together as one 'item' in a way  */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    /* flex-start by default */
+    /* flex-end moves from top left to top right (assuming everything else is default) */
+    /* center moves to middle of axis */
+    /* space-between evenly distributes items (one in middle, one on left corner, one on right corner (if theres 3) */
+    /* space-around is like between but theyre a little closer together and don't touch the sides of the page, adds space around */
+    /* space-evenly evenly distributes space around items. gaps are the same size between all items */
+}
+
+.flex-gap {
+    /* adds gaps between items so they don't touch eachother  */
+    display: flex;
+    gap: 1px;
+}
+
+/* ----------------------------- for items inside containers ----------------------------- */
+/* e.g. if you have
+<div class="container">
+    <div class="item item-1">item 1</div>
+    <div class="item item-2">item 2</div>
+    <div class="item item-3">item 3</div>
+</div> 
+this will be for the item-1 or item-2 or item-3*/
+.item-1 {
+    flex-grow: 1;
+}
+.item-2 { /*flex-grow*/
+    /* item grows if there is enough space to do so,
+    so other items stay same size and the item with item-grow takes up leftover space */
+    /* its either 1 or 0  */
+    flex-grow: 1;
+}
+
+.item-3 { /*flex-shrink*/
+    /* how fast one item shrinks in comparison to others. */
+    /* the items shrink when you make the tab skinnier on a webpage */
+    flex-shrink: 1;
+}
+
+.item-4 { /*flex-basis*/
+    /* overrides item width */
+    flex-basis: 100px;
+}
+
+.item-5 { /*flex*/
+    /* shorthand for
+    flex-grow, flex-shrink, flex-basis */
+    flex: 1; /*flex-grow: 1, flex-shrink: 0, flex-basis: default*/
+}
+
+.item-6 { /*align-self*/
+    align-self: center;
+    /* makes item-6 in the center of y axis? but not the other items.
+    overrides container rules but only for this individual item  */
+    /* flex-start by default */
+    /* flex-end opposite of flex-start*/
+    /* center moves to middle of axis */
+    /* baseline is so that the baseline text of each item is aligned, 
+    for example if the text of another item is bigger or smaller the text of each item will still be aligned. 
+    (boxes will be uneven if text different size so that text is aligned) */
+}
+
+.item-7 { /*order*/
+    /* you probably shouldnt use this it just overcomplicates things */
+    order: -1;
+    /* order the items appear on the page */
+    /* if you have *//*
+ <div class="container">
+    <div class="item item-1">item 1</div>
+    <div class="item item-2">item 2</div>
+    <div class="item item-3">item 3</div>
+    <div class="item item-7">item 3</div>
+</div>  */
+/* -1 makes it first item */
+
+
+}
