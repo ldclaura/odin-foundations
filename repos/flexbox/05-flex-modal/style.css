@@ -4,10 +4,22 @@ html, body {
   height: 100%;
 }
 
+.header {
+  font-weight: bold;
+  /* align-self: revert; */
+}
 .container {
   display: flex;
-  flex-direction: column;
-  background-color: green;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
 }
 
 body {
@@ -27,6 +39,7 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 5px;
 }
 /* SOLUTION */
 /* 
