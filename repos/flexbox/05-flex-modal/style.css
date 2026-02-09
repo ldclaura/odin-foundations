@@ -11,15 +11,22 @@ html, body {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: normal;
+  /* align-items: baseline; */
   gap: 5px;
 }
 
+.text {
+  padding-left: 50px;
+  text-align: left;
+}
 .container-2 {
   display: flex;
   justify-content: flex-start;
   gap: 5px;
+  align-items: center;
+  padding-left: 50px;
+  padding-bottom: 15px
 }
 
 body {
@@ -72,6 +79,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button-div {
+  display: flex;
 }
 
 .close-button {
