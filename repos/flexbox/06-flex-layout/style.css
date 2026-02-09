@@ -2,6 +2,7 @@
 
 body {
   height: 100vh;
+  /* flex-direction: column; */
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
@@ -24,3 +25,17 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+.footer {
+  display: flex;
+  justify-content: normal;
+  margin-top: auto;
+}
+
+/* .left-links {
+  align-self: flex-start;
+}
+
+.right-links {
+  align-self: flex-end;
+} */
