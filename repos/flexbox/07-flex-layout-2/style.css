@@ -5,6 +5,18 @@ body {
   flex-direction: column;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 32px;
+  font-weight: 900;
+  /* flex-direction: column; */
+  height: 72px;
+  background: darkmagenta;
+  color: white;
+  /* justify-content: space-between; */
+}
 .body {
   flex: 1;
   display: flex;
@@ -26,18 +38,7 @@ a {
   font-size: 24px;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  font-size: 32px;
-  font-weight: 900;
-  /* flex-direction: column; */
-  height: 72px;
-  background: darkmagenta;
-  color: white;
-  /* justify-content: space-between; */
-}
+
 
 .footer {
   display: flex;
