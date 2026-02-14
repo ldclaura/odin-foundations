@@ -18,7 +18,7 @@ body {
 .body {
     flex: 1;
     display: flex;
-    background-color: green;
+    background-color: white;
     flex-direction: column;
     padding: 0;
     margin: 0;
@@ -30,12 +30,29 @@ body {
     display: flex;
     background-color: #1F2937;
     color: #f9FAF8;
+    justify-content: space-around;
+    align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color: #f9FAF8;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+}
+
+
 .box {
-    background-color: red;
-    width: 100%;
-    height: 100px;
+    background-color: white;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
     /* padding: 100px; */
     margin: 0;
 }
@@ -51,9 +68,67 @@ body {
 }
 
 .container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: space-around;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  /* position: absolute; */
+}
+
+.container1 {
   padding: 48px;
   display: flex;
-  flex-wrap: wrap;
+  /* align-items: space-evenly;
+  justify-content: space-evenly; */
   gap: 32px;
+  background-color: #1F2937;
+  height: 25vh;
+}
+
+.image1 {
+    width: 50%;
+    background-color: grey;
+}
+.container2 {
+  padding: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 32px;
+  /* flex-direction: column; */
+  background-color: white;
+  height: 25vh;
+}
+
+.container3 {
+  padding: 48px;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* gap: 100px; */
+  /* flex-direction: column; */
+  background-color: #E5E7EB;
+  height: 25vh;
+}
+
+.container4 {
+  padding: 48px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 32px;
+  /* flex-direction: column; */
+  background-color: #3882F6;
+  border-radius: 5px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 25vh;
 }
