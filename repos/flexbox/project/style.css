@@ -52,8 +52,9 @@ ul {
     border-style: solid;
     border-color: #3882F6;
     border-radius: 10px;
-    width: 75px;
-    height: 75px;
+    width: 150px;
+    height: 150px;
+    /* max-width: 200px; */
     /* padding: 100px; */
     margin: 0;
     /* max-width: 200px; */
@@ -102,12 +103,13 @@ ul {
 }
 .container2 {
   padding: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 32px;
-  flex-direction: column;
+  padding-top: 10px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  /* gap: 32px; */
+  /* flex-direction: column; */
   background-color: white;
   height: 25vh;
 }
@@ -135,8 +137,9 @@ ul {
   border-radius: 5px;
   margin-left: 250px;
   margin-right: 250px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  /* padding-bottom: 50px; */
   height: 25vh;
   color: #f9FAF8;
 }
@@ -145,13 +148,18 @@ ul {
   flex: 1;
 }
 
+
+
 .text {
   /* width: 100%; */
-  justify-content: center;
+  /* justify-content: center; */
   /* flex-grow: 1; */
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 5px; */
+  display: flex;
+  flex-flow: column wrap;
+  /* text-align: left; */
 }
 
 h2 {
@@ -164,17 +172,48 @@ h2 {
   justify-content: center;
   /* flex-grow: 1; */
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+  
+  /* align-items: baseline; */
+  /* flex-wrap: wrap; */
+  /* gap: 5px; */
+}
+
+.boxandtext {
+  max-width: 200px;
+
+  
 }
 
 button {
-  width: 100%;
-  flex: 2;
   background-color: #3882F6;
   border-color: white;
   border-style: solid;
   border-radius: 10px;
   color: white;
   font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* text-align: center; */
+}
+
+.button4 {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+.info3 {
+  width: 50vh;
+  font-size: 25px;
+  color: #1F2937
+}
+
+
+
+.quote {
+  text-align: right;
+  width: 50vh;
 }
