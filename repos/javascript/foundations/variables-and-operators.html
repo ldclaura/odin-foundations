@@ -13,6 +13,76 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- this is javascript (<script>) -->
+    <script>
+        // this is shown when you open the dev tools console on webpage.
+        console.log("hello world")
+    </script>
+    <!-- external sheet like css -->
+    <script src="javascript.js"></script>
     
+
+
+    <!-- DECLARE VARIABLES -->
+    <script>
+        let firstname = "John";
+        let lastname = "Doe";
+
+        console.log(firstname);
+        console.log(lastname);
+    </script>
+
+    <!-- REASSIGN VARIABLES -->
+    <script>
+        let age = 11;
+        console.log(age);
+
+        age = 15;
+        // if variable has already been created once, let is not needed another time.
+        console.log(age);
+    </script>
+
+    <!-- CONSTANT VARIABLES -->
+    <script>
+        // variables that can not be reassigned.
+        const pi = 3.14;
+
+        // pi = 10;
+        // reassignment causes a TypeError.
+
+        console.log(pi);
+    </script>
+
+    <!-- OLD WAY OF DECLARING VARIABLES. -->
+    <script>
+        // not used anymore.
+        var num = 10;
+        console.log(10);
+    </script>
+
+    <!-- NUMBERS -->
+    <script>
+        // follows PEMDAS / BODMAS
+        console.log((3+2) - 76 * (1+1))
+
+        console.log(23+97)
+        console.log((4+6+9) / 77)
+    </script>
+
+    <script>
+        let a = 10;
+        console.log(a);
+
+        a = 11;
+        console.log(a);
+
+        let b = 7 * a;
+        console.log(b);
+
+        let max = 57;
+        let actual = max - 13;
+        let percentage = actual / max;
+        console.log(percentage);
+    </script>
 </body>
 </html>
